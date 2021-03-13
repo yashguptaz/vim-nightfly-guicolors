@@ -869,3 +869,13 @@ exec 'highlight BufferVisibleSign  guibg=' . s:dark_blue . '  guifg=' . s:grey_b
 exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
 exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
 exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
+
+
+let s:grey_blue  = '#7c8f8f'
+let s:cadet_blue = '#a1aab8'
+let s:none       = 'NONE'
+
+exe 'hi BufferInactive     guibg=' . s:none . ' guifg=' . s:grey_blue
+exe 'hi BufferInactiveSign guibg=' . s:none . ' guifg=' . s:cadet_blue
+exe 'hi BufferTabpageFill guibg=' . s:none . ' guifg=' . s:none
+
