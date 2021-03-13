@@ -859,6 +859,10 @@ exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 
+let s:grey_blue  = '#7c8f8f'
+let s:cadet_blue = '#a1aab8'
+let s:none       = 'NONE'
+
 " barbar.nvim plugin
 exec 'highlight BufferCurrent      guibg=' . s:dark_blue . '  guifg=' . s:white
 exec 'highlight BufferCurrentMod   guibg=' . s:dark_blue . '  guifg=' . s:tan
@@ -866,16 +870,10 @@ exec 'highlight BufferCurrentSign  guibg=' . s:dark_blue . '  guifg=' . s:blue
 exec 'highlight BufferVisible      guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
 exec 'highlight BufferVisibleMod   guibg=' . s:dark_blue . '  guifg=' . s:tan
 exec 'highlight BufferVisibleSign  guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
-exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
+exec 'highlight BufferInactive     guibg=' . s:none . ' guifg=' . s:grey_blue
 exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
-exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
+exec 'highlight BufferInactiveSign guibg=' . s:none . ' guifg=' . s:cadet_blue
+exec 'highlight BufferTabpageFill  guibg=' . s:none . ' guifg=' . s:none
 
 
-let s:grey_blue  = '#7c8f8f'
-let s:cadet_blue = '#a1aab8'
-let s:none       = 'NONE'
-
-exe 'hi BufferInactive     guibg=' . s:none . ' guifg=' . s:grey_blue
-exe 'hi BufferInactiveSign guibg=' . s:none . ' guifg=' . s:cadet_blue
-exe 'hi BufferTabpageFill guibg=' . s:none . ' guifg=' . s:none
 
